@@ -721,8 +721,19 @@ class SaveRelationsBehavior extends Behavior
      * Populates relations with input data
      * @param array $data
      * @throws InvalidConfigException
+     * @deprecated Use loadRelationsData instead
      */
     public function loadRelations($data)
+    {
+        $this->loadRelationsData($data);
+    }
+
+    /**
+     * Populates relations with input data
+     * @param array $data
+     * @throws InvalidConfigException
+     */
+    public function loadRelationsData($data)
     {
         /** @var BaseActiveRecord $owner */
         $owner = $this->owner;

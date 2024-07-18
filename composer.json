@@ -40,5 +40,10 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    ]
+    ],
+    "extra": {
+        "branch-alias": {
+            "1.7": "1.7.x-dev"
+        }
+    }
 }
